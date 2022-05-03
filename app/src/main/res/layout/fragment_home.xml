@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    tools:context=".ui.home.HomeFragment">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="391dp"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:inputType="text"
+        android:queryHint="Etsi elokuvaa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="142dp"
+        android:layout_height="48dp"
+        android:onClick="signOut"
+        android:text="@string/kirjaudu_ulos"
+        android:textColor="#5D4037"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:background="#FFA91C"
+        android:contentDescription="@string/title_movieTheaters"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:importantForAutofill="no"
+        android:text="Elokuvat:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        style="@android:style/Widget.Material.Light.DatePicker"
+        android:layout_width="230dp"
+        android:layout_height="158dp"
+        android:background="@color/white"
+        android:calendarViewShown="false"
+        android:clipToPadding="true"
+        android:datePickerMode="spinner"
+        android:dayOfWeekTextAppearance="@style/TextAppearance.AppCompat.Small"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:startYear="2022"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:text="Elokuva-arkisto"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <ListView
+        android:id="@+id/shows"
+        style="@android:style/Widget.ListView.DropDown"
+        android:layout_width="409dp"
+        android:layout_height="387dp"
+        android:background="#FFFFFF"
+        android:headerDividersEnabled="false"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="125dp"
+        android:layout_height="19dp"
+        android:text="Syötä päivämäärä:"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

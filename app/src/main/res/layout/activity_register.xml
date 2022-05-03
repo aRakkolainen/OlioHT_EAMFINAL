@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Register">
+
+
+    <EditText
+        android:id="@+id/inputText_username"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="@string/underline_color_change"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputText_password"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Underline color change"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText_username" />
+
+    <EditText
+        android:id="@+id/inputText_email"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Underline color change"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Käyttäjänimi:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_username"
+        app:layout_constraintStart_toStartOf="@+id/inputText_username" />
+
+    <TextView
+        android:id="@+id/textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salasana:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_password"
+        app:layout_constraintStart_toStartOf="@+id/inputText_password" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sähköposti:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_email"
+        app:layout_constraintStart_toStartOf="@+id/inputText_email" />
+
+    <Button
+        android:id="@+id/button_registerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luo käyttäjä!"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

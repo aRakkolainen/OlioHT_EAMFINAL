@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Olio-HT</string>
+    <string name="salasana">Salasana:</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_movieTheaters">MovieTheaters></string>
+    <string name="elokuvan_nimi">Elokuvan nimi</string>
+    <string name="arvostelun_paivamaara">Arvostelun päivämäärä</string>
+    <string name="movielogo">movieLogo</string>
+    <string name="kirjoita_arvostelu">Kirjoita arvostelu:</string>
+    <string name="arvostele">Arvostele</string>
+    <string name="date">Päivämäärä</string>
+    <string name="giveStars">Anna Tähdet</string>
+    <string name="vapaaehtoinen_arvostelu">Kirjoita vapaaehtoinen \narvostelu</string>
+    <string name="arvostelu">Arvostelu</string>
+    <string name="t_hdet">Tähdet</string>
+    <string name="k_ytt_j_nimi">Käyttäjänimi</string>
+    <string name="asetukset">Asetukset</string>
+    <string name="textview">TextView</string>
+    <string name="s_hk_postiosoite">Sähköpostiosoite</string>
+    <string name="vaihda_salasana">Vaihda salasana</string>
+    <string name="kirjaudu_ulos">Kirjaudu ulos</string>
+    <string name="palauta_salasana">Palauta salasana</string>
+    <string name="kirjaudu">Kirjaudu</string>
+    <string name="rekister_idy">Rekisteröidy</string>
+    <string name="etk_ole_viel_k_ytt_j">Etkö ole vielä käyttäjä?</string>
+    <string name="kirjaudu_sis_n">Kirjaudu sisään</string>
+    <string name="underline_color_change_password">Underline color change, Password</string>
+    <string name="underline_color_change">Underline color change</string>
+    <string name="unohtuiko_salasana">Unohtuiko salasana?</string>
+    <string name="k_ytt_j_nimi_tai_s_hk_postiosoite">Käyttäjänimi tai sähköpostiosoite:</string>
+    <string name="finnkinon_elokuva_arkisto">Finnkinon elokuva-arkisto</string>
+
+</resources>

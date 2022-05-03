@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/listitemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/elokuvan_nimi"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitemStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/t_hdet"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <RatingBar
+        android:id="@+id/listitemStarnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:clickable="false"
+        android:contentDescription="@string/t_hdet"
+        android:longClickable="false"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/listitemReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="#FFFFFF"
+        android:text="@string/arvostelu"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/listitemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/date"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+</LinearLayout>

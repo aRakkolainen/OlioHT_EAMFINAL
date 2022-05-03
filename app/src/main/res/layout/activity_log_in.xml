@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LogIn">
+
+    <EditText
+        android:id="@+id/inputText_password"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="@string/underline_color_change_password"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <EditText
+        android:id="@+id/inputText_username"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="@string/underline_color_change"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/palauta_salasana"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_login"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rekister_idy"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kirjaudu_sis_n"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_username"
+        app:layout_constraintStart_toStartOf="@+id/inputText_username"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kirjaudu"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inputText_password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etk_ole_viel_k_ytt_j"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unohtuiko_salasana"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button_ForgotPassword"
+        app:layout_constraintStart_toStartOf="@+id/button_ForgotPassword" />
+
+    <TextView
+        android:id="@+id/textView_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/k_ytt_j_nimi_tai_s_hk_postiosoite"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_username"
+        app:layout_constraintStart_toStartOf="@+id/inputText_username" />
+
+    <TextView
+        android:id="@+id/textView_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salasana"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputText_password"
+        app:layout_constraintStart_toStartOf="@+id/inputText_password" />
+
+    <TextView
+        android:id="@+id/textView_Error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintStart_toStartOf="@+id/inputText_password"
+        app:layout_constraintTop_toBottomOf="@+id/inputText_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
